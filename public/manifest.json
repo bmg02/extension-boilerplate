@@ -4,6 +4,11 @@
 	"version": "1.0.0",
 	"author": "Bhuvan Gandhi",
 	"manifest_version": 3,
+	"icons": {
+		"16": "extension_16x16.png",
+		"48": "extension_48x48.png",
+		"128": "extension_128x128.png"
+	},
 	"action": {},
 	"permissions": [
 		"activeTab",
@@ -13,7 +18,7 @@
 		"tabs"
 	],
 	"background": {
-		"service_worker": "./bundle/worker.js",
+		"service_worker": "/bundle/worker.js",
 		"type": "module"
 	},
 	"content_scripts": [
